@@ -1,20 +1,20 @@
 void main(){
 
-  //constants
+  //if else
+  var a = 10;
+  if(a == 10)
+      print('$a is equal to 10');
+  else
+      print('$a is not equal to 10');
 
-  //final keyword
-  final cityName = "Mumbai";
-  print(cityName);
-  //cityName = "dhaka";
+  //if else ladder
+  var b = 10;
+  if(b < 10)
+      print('b is less than 10');
+  else if( b > 10)
+      print('b is greater than 10');
+  else
+    print('b is equal to 10');
 
-  //const keyword
-  const PI = 3.14;
-  print(PI);
 
-}
-
-class demp{
-  final str = "test";
-  //const VAL = 5;
-  static const VAL = 5;
 }
