@@ -1,20 +1,20 @@
 void main(){
 
-  //Literals
-  var isCool = true;
-  int x = 2;
-  
-  //Various way to define String Literals in Dart
-  String s1 = 'Single';
-  String s2 = "Double";
-  String s3 = 'It\'s easy';
-  String s4 = 'This is going to be a very long string. '
-              'This is test';
-  print(s4);
+  //constants
 
-  //String Interpolation
-  String name = "Imam";
+  //final keyword
+  final cityName = "Mumbai";
+  print(cityName);
+  //cityName = "dhaka";
 
-  print("My name is $name");
-  print("The length of my  name is ${name.length}");
+  //const keyword
+  const PI = 3.14;
+  print(PI);
+
+}
+
+class demp{
+  final str = "test";
+  //const VAL = 5;
+  static const VAL = 5;
 }
