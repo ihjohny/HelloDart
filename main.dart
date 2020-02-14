@@ -1,26 +1,20 @@
 void main(){
-  print("Hello Word");
 
-  // Data Types and Variables
-  int number = 100;
-  var number1 = 101;
-  print(number);
-  print(number1);
+  //Literals
+  var isCool = true;
+  int x = 2;
+  
+  //Various way to define String Literals in Dart
+  String s1 = 'Single';
+  String s2 = "Double";
+  String s3 = 'It\'s easy';
+  String s4 = 'This is going to be a very long string. '
+              'This is test';
+  print(s4);
 
-  double number2 = 100.100;
-  var number3 = 100.101;
-  print(number2);
-  print(number3);
+  //String Interpolation
+  String name = "Imam";
 
-
-  bool check = true;
-  var check1 = false;
-  print(check);
-  print(check1);
-
-  String str1 = "String";
-  var str2 = "String using Var";
-  print(str1);
-  print(str2);
-
+  print("My name is $name");
+  print("The length of my  name is ${name.length}");
 }
