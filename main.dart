@@ -37,6 +37,7 @@ void main() {
   }
 
   //using label in for loop
+  print("label in for loop with break");
   loop1: for(var k = 0; k <= 10; k++){
     for(var l = 0; l <= 10; l++){
       if(k == 5 && l == 5)
@@ -45,5 +46,14 @@ void main() {
     }
   }
 
+  //continue keyword and label in loop
+  print("label in for loop with continue");
+  loop1: for(var k = 0; k <= 5; k++){
+    for(var l = 0; l <= 5; l++){
+      if(k == 2 && l == 2)
+        continue loop1;
+      print("k: $k l: $l");
+    }
+  }
 
 }
