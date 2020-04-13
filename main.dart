@@ -1,40 +1,22 @@
 void main(){
-  //fixsize list
-  List<int> numberList = List(5);
-  numberList[0] = 1;
-  numberList[1] = 22;
-  numberList[2] = 33;
 
-  numberList[1] = 55;
+  //set - unordered collection of unique elements
 
-  // for each loop using lambda
-  // numberList.forEach((element) => print(element));
-
-  for(int i in numberList){
+  //set from list
+  Set<String> countries = Set.from(["Ban", "Ind", "Pak", "Ban"]);
+  for(String i in countries){
     print(i);
   }
-  print("\n");
 
-  //growable sizelist
-  List<int> numList = List();
-  // List<int> numList = [1, 4, 0];
-  numList.add(5);
-  numList.add(10);
-  numList.add(15);
-  numList.add(16);
-  numList.add(10);
+  Set<int> numList = Set();
+  numList.add(22);
+  numList.add(33);
+  numList.add(22);
+  numList.add(44);
+  numList.add(44);
 
-  numList.forEach((element) => print(element));
-  print("\n");
-
-
-  numList.remove(10);
-  numList.removeAt(3);
-  numList.forEach((element) => print(element));
-  print("\n");
-
-  numList.clear();
-  numList.forEach((element) => print(element));
-
+  for(int i in numList){
+    print(i);
+  }
 
 }
