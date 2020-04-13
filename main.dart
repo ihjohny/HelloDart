@@ -1,22 +1,26 @@
-void main(){
+void main() {
+  //map and hashmap
+  Map<String, int> foods = Map();
+  foods["chicken"] = 2;
+  foods["juice"] = 5;
+  foods["soup"] = 3;
 
-  //set - unordered collection of unique elements
+  foods.update("soup", (value) => 99);
 
-  //set from list
-  Set<String> countries = Set.from(["Ban", "Ind", "Pak", "Ban"]);
-  for(String i in countries){
-    print(i);
+  for (String key in foods.keys) {
+    print(key);
   }
 
-  Set<int> numList = Set();
-  numList.add(22);
-  numList.add(33);
-  numList.add(22);
-  numList.add(44);
-  numList.add(44);
-
-  for(int i in numList){
-    print(i);
+  for (int value in foods.values) {
+    print(value);
   }
+
+  Map<String, String> name = {
+    "Don": "one",
+    "Jon": "two",
+    "Kon": "three"
+  };
+
+  name.forEach((key,value) => print(key+" "+value));
 
 }
